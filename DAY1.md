@@ -8,6 +8,24 @@ component identified, and eight binary checkpoints.**
 
 ---
 
+## First — take a copy
+
+One line. It gives you a folder with everything today needs in it.
+
+```bash
+git clone https://github.com/vrnico/make-and-do-template.git my-project
+cd my-project
+```
+
+**No git yet?** [Template repo](https://github.com/vrnico/make-and-do-template) → green **Code**
+button → **Download ZIP** → unzip it. Identical folder, no account, thirty seconds. We'll get
+git on your machine in the Shipping Software hour and it won't cost you anything today.
+
+Open the folder in whatever you edit text in. **That's the whole setup — don't do any more of
+it right now.**
+
+---
+
 ## Exercise 1 · The one thing · 10 min
 
 Write it as one paragraph.
@@ -23,7 +41,7 @@ is exactly why you're writing it on day one, before there's anything to defend i
 > **Holding two projects?** You won't be able to write this. That's not you failing the exercise,
 > that *is* the exercise. Pick the one you thought of first, not the sensible one.
 
-→ `_TEMPLATE/00-SCOPE.md`
+→ open **`00-SCOPE.md`**
 
 ---
 
@@ -50,7 +68,7 @@ could have made.
 Circle **one** genesis component: the one where, if you only shipped that, it would still be
 recognisably the idea.
 
-→ `_TEMPLATE/01-MAP.md`
+→ open **`01-MAP.md`**
 
 ### The prompt
 
@@ -73,8 +91,8 @@ Be blunt if what I called distinctive is actually Custom.
 
 ## Heads down · 15 min
 
-**Start the genesis component.** Not the repo, not the folder structure, not the build pipeline.
-The scary bit.
+**Start the genesis component.** Not the folder structure, not the build pipeline, not making
+the repo yours. The scary bit.
 
 It's going to be bad. You're not making it work — you're finding out what it's like.
 
@@ -97,7 +115,7 @@ Then name **the riskiest part**, and put it early. Whatever is most likely to no
 thing you do first, not the thing you save. Most prototypes that fail, fail because the hard
 part was left for last.
 
-→ `_TEMPLATE/02-CHECKPOINTS.md`
+→ open **`02-CHECKPOINTS.md`**
 
 ---
 
@@ -118,7 +136,7 @@ it.
 
 One paragraph before you close the tab: **what you made, what broke, what you decided.**
 
-→ `_TEMPLATE/log/day1.md`
+→ open **`log/day1.md`**
 
 ---
 
@@ -127,7 +145,21 @@ One paragraph before you close the tab: **what you made, what broke, what you de
 **Take one Product or Commodity component off your list** by finding the thing you'll use
 instead of building it. Every one you retire buys back build hours.
 
-And if you want your folder in here properly, that's the hour to do it. Not during class.
+**And make the folder your own repo.** Right now git still thinks those files belong to the
+class — cut the link, start your own history, push it somewhere:
+
+```bash
+rm -rf .git
+git init
+git add -A && git commit -m "day 1"
+```
+
+Then an empty repo on GitHub and `git remote add origin …`. The
+[template's README](https://github.com/vrnico/make-and-do-template#making-this-your-own-repo)
+has the rest, and this is the hour to ask if it fights you.
+
+By Day 8 you want eight commits across eight days. That's a real record of how the thing got
+built, and you'll want it when somebody asks what it actually took.
 
 ---
 

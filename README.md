@@ -70,20 +70,54 @@ Everything else is catch-up-able in the Shipping Software hour.
 
 ---
 
-## Your folder
+## Your project
 
-Yours lives in [`sprints/`](sprints/) and holds five files. They're in
-[`_TEMPLATE/`](_TEMPLATE/) — copy them, or just read them and keep your answers wherever you
-like. **Nothing here needs to be done during class.**
+**You work locally.** Nothing you make goes into this repo — this is the handbook, you read it.
+Your project lives on your own machine, and by the end of the fortnight, in your own GitHub repo.
 
-```
-_TEMPLATE/
-  00-SCOPE.md         day 1 · the one thing + demo-ready definition
-  01-MAP.md           day 1 · the four stages + your genesis component
-  02-CHECKPOINTS.md   day 1 · eight binary checkpoints + the riskiest part
-  03-FAKES.md         day 7 · what you're faking, and what you'll disclose
-  log/day1.md …       one paragraph a day
+Take a copy of the scaffold once, on Day 1:
+
+```bash
+git clone https://github.com/vrnico/make-and-do-template.git my-project
+cd my-project
 ```
 
-**Never used GitHub before?** That's fine and it is not today's problem. Read the day file in
-your browser like any other page. We'll sort the rest out in the Shipping Software hour.
+**No git installed?** Open
+[the template](https://github.com/vrnico/make-and-do-template) → green **Code** button →
+**Download ZIP**. Same folder, no account needed. Sort git out in the Shipping Software hour.
+
+Inside it:
+
+```
+00-SCOPE.md         day 1 · the one thing + your demo-ready definition
+01-MAP.md           day 1 · the four stages + your genesis component
+02-CHECKPOINTS.md   day 1 · eight binary checkpoints + the riskiest part
+03-FAKES.md         day 7 · what you're faking, and what you'll disclose
+log/day1.md …       one paragraph a day
+scratch/            yours. gitignored. never leaves your machine.
+```
+
+Your actual project goes in that same folder, in whatever shape it wants — a folder of code, a
+Unity project, audio stems, one `index.html`. The markdown files are the record; the rest is
+the work.
+
+---
+
+## Making it yours
+
+You cloned this repo, so git still thinks the files belong to the class. Cutting that link and
+starting your own history is three commands, and it's the **Shipping Software hour**, not the
+class hour:
+
+```bash
+rm -rf .git
+git init
+git add -A && git commit -m "day 1"
+```
+
+Then an empty repo on GitHub and `git remote add origin …`. The
+[template's README](https://github.com/vrnico/make-and-do-template#making-this-your-own-repo)
+walks the whole thing.
+
+**Nothing in the 90 minutes depends on any of this working.** If it fights you, bring it to the
+Shipping Software hour — that's the hour built for it.
