@@ -17,9 +17,12 @@ git clone https://github.com/vrnico/make-and-do-template.git my-project
 cd my-project
 ```
 
-**No git yet?** [Template repo](https://github.com/vrnico/make-and-do-template) → green **Code**
-button → **Download ZIP** → unzip it. Identical folder, no account, thirty seconds. We'll get
-git on your machine in the Shipping Software hour and it won't cost you anything today.
+**No git yet?** [**Download the ZIP**](https://github.com/vrnico/make-and-do-template/archive/refs/heads/main.zip) — that link downloads
+straight away, no account, nothing to click through. Unzip it and **rename the folder** from
+`make-and-do-template-main` to whatever your project is called.
+
+Identical files either way. We'll get git on your machine in the Shipping Software hour and it
+costs you nothing today.
 
 Open the folder in whatever you edit text in. **That's the whole setup — don't do any more of
 it right now.**
@@ -145,14 +148,18 @@ One paragraph before you close the tab: **what you made, what broke, what you de
 **Take one Product or Commodity component off your list** by finding the thing you'll use
 instead of building it. Every one you retire buys back build hours.
 
-**And make the folder your own repo.** Right now git still thinks those files belong to the
-class — cut the link, start your own history, push it somewhere:
+**And make the folder your own repo.**
+
+If you **cloned**, git still thinks those files belong to the class, so cut that link first:
 
 ```bash
-rm -rf .git
+rm -rf .git          # only if you cloned
 git init
 git add -A && git commit -m "day 1"
 ```
+
+If you took the **ZIP**, there's no git in there at all — skip the first line, start at
+`git init`. You've actually got the simpler path.
 
 Then an empty repo on GitHub and `git remote add origin …`. The
 [template's README](https://github.com/vrnico/make-and-do-template#making-this-your-own-repo)

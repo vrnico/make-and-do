@@ -82,9 +82,9 @@ git clone https://github.com/vrnico/make-and-do-template.git my-project
 cd my-project
 ```
 
-**No git installed?** Open
-[the template](https://github.com/vrnico/make-and-do-template) → green **Code** button →
-**Download ZIP**. Same folder, no account needed. Sort git out in the Shipping Software hour.
+**No git installed?** [**Download the ZIP**](https://github.com/vrnico/make-and-do-template/archive/refs/heads/main.zip) — one click,
+no account. Unzip it and rename the folder from `make-and-do-template-main` to your project's
+name. Sort git out in the Shipping Software hour.
 
 Inside it:
 
@@ -105,12 +105,12 @@ the work.
 
 ## Making it yours
 
-You cloned this repo, so git still thinks the files belong to the class. Cutting that link and
-starting your own history is three commands, and it's the **Shipping Software hour**, not the
-class hour:
+If you **cloned**, git still thinks the files belong to the class — cut that link and start
+your own history. If you took the **ZIP**, there's no git in there, so skip the first line.
+Either way this is the **Shipping Software hour**, not the class hour:
 
 ```bash
-rm -rf .git
+rm -rf .git          # only if you cloned
 git init
 git add -A && git commit -m "day 1"
 ```
