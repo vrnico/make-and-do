@@ -4,7 +4,7 @@
 *which parts* to cut rather than just cutting proportionally.
 
 By the time you leave: **one project named, a demo-ready definition written, one genesis
-component identified, and eight binary checkpoints.**
+component identified, and the riskiest part named and started.**
 
 ---
 
@@ -101,24 +101,28 @@ It's going to be bad. You're not making it work — you're finding out what it's
 
 ---
 
-## Exercise 3 · Eight days · 15 min
+## Exercise 3 · The riskiest part · 15 min
 
-One checkpoint per class day. **A thing that either exists or doesn't** at the end of it.
+**Whatever is most likely to not work is the thing you do first, not the thing you save.** Most
+prototypes that fail, fail because the hard part was left for last — and by the time you reach
+it there's no time to do anything but panic.
 
-Not *"work on the renderer"* → **"the renderer draws one frame."**
-Not *"make progress on audio"* → **"one sound plays when you click."**
+So: **name it in writing.** The one piece where, if it turns out to be impossible or much harder
+than you thought, nothing else matters.
 
-A percentage-complete estimate on creative work is a wish. It stays at 80% for nine days and
-then the sprint ends. **A binary checkpoint is the only kind that tells you you're behind while
-there's still time to do something about it.**
+Then write **one checkpoint for tomorrow**. A checkpoint is a thing that either **exists** or
+**doesn't** at the end of a day:
 
-Two are already filled in — both Thursdays are show days, and that isn't negotiable.
+- Not *"work on the renderer"* → **"the renderer draws one frame."**
+- Not *"make progress on audio"* → **"one sound plays when you click."**
 
-Then name **the riskiest part**, and put it early. Whatever is most likely to not work is the
-thing you do first, not the thing you save. Most prototypes that fail, fail because the hard
-part was left for last.
+A percentage-complete estimate is a wish — it sits at 80% until you run out of days. Something
+binary is the only kind that tells you you're behind while there's still time to do something
+about it.
 
-→ open **`02-CHECKPOINTS.md`**
+**Then go back to building.** If you finish this in four minutes, the other eleven are yours.
+
+→ open **`02-RISK.md`**
 
 ---
 
@@ -165,8 +169,8 @@ Then an empty repo on GitHub and `git remote add origin …`. The
 [template's README](https://github.com/vrnico/make-and-do-template#making-this-your-own-repo)
 has the rest, and this is the hour to ask if it fights you.
 
-By Day 8 you want eight commits across eight days. That's a real record of how the thing got
-built, and you'll want it when somebody asks what it actually took.
+A commit a day is plenty. It's a real record of how the thing got built, and you'll want it
+when somebody asks what this actually took.
 
 ---
 
