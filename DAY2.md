@@ -7,6 +7,8 @@ sense.
 
 Today you find that one and you test it, while testing it is still cheap.
 
+**Every prompt from today lives in [PROMPTS.md](PROMPTS.md).**
+
 By the time you leave: **you can say in one sentence whether the scariest thing about your
 project is true.**
 

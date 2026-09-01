@@ -8,6 +8,8 @@ the morning of it. You read it; your work stays on your own machine.
 **→ [Day 1 · Scope down](DAY1.md)**
 **→ [Day 2 · Kill the riskiest part](DAY2.md)**
 
+**→ [All the prompts, in one place](PROMPTS.md)**
+
 ---
 
 ## Your project
