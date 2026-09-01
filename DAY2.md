@@ -80,6 +80,67 @@ Aim for ten. Bad ones count.
 
 → open **`01-BETS.md`**
 
+### The prompts
+
+**Spend the first five minutes on your own, then use these.** In that order. An AI that hands
+you ten assumptions gives you ten things you don't believe, and you can't test a bet you never
+made.
+
+**A · What did I miss** *(the main one)*
+
+```
+Here's my project, and here are the assumptions I've written down so far.
+
+The project: [paste]
+My assumptions: [paste your list]
+
+I'm sorting these into three layers:
+  PROJECT   - is it possible, does anyone want it, is it interesting
+  BUILDER   - my skills, my time, what I'm expecting AI to do for me
+  MACHINE   - my computer, my tools, whether I can get at and keep my own code
+
+Tell me which layer I've under-thought, and give me five assumptions I
+have NOT written down that belong in it. Phrase each one as a claim that
+could turn out false, not as a question.
+
+Be blunt. If my list is all technical and I've assumed without checking
+that anyone wants this, say so plainly.
+```
+
+**B · If the page is blank** *(interview mode)*
+
+```
+I'm building this over the next two weeks: [paste]
+
+Interview me to surface the assumptions I'm making without noticing.
+Ask ONE question at a time and wait for my answer before the next one.
+Ten questions, roughly evenly split across three areas: the project
+itself, me as a builder, and my computer and tools.
+
+Don't summarise, don't reassure, and don't offer solutions. Just ask.
+At the end, list the assumptions my answers revealed, in my own words
+where you can.
+```
+
+**C · The machine layer** *(nobody knows how to introspect on this one)*
+
+```
+Here's my setup:
+  Computer: [e.g. 2019 MacBook / Chromebook, can't install anything /
+             Windows laptop, no admin rights]
+  Where my code lives: [local folder / GitHub / Replit / I don't know]
+  What I build with: [Claude Code / Cursor / ChatGPT + copy-paste / VS Code]
+  How I get back to a working version if something breaks: [git / I don't]
+
+What am I assuming about this setup that could cost me days in a two-week
+sprint? Include the boring failure modes people don't think about until
+they happen.
+
+For each one, tell me whether it's cheap or expensive to fix, and whether
+I should fix it now or design around it.
+```
+
+
 ---
 
 ## Exercise 2 · Sort, circle, build · 15 min
