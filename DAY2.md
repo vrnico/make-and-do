@@ -165,28 +165,74 @@ that would genuinely change your plan if it failed.
 
 → open **`02-RISK.md`**
 
-### The prompt
+### The prompts
+
+**Rank it yourself first.** These check your ranking and shrink your test. They don't do it for you.
+
+**A · Check my ranking** *(the sort is the part people get wrong)*
 
 ```
-Here's what I'm building and my plan for the next two weeks:
-[paste project + demo-ready definition + build plan]
+Here are the assumptions my project depends on, ranked by what it would
+cost me to be wrong:
 
-List every assumption this plan depends on, across three layers:
-the PROJECT (does anyone want it, is it possible, is it interesting),
-the BUILDER (my skills, my time, what I'm expecting AI to do), and
-the MACHINE (my computer, my tools, my ability to get at and keep
-my own code).
+[paste your list in your order]
 
-For each: state it as a falsifiable claim, rate my likely confidence,
-estimate the cost of testing it now, and describe what happens to the
-sprint if it turns out false.
+Two questions.
 
-Sort by cost-of-being-wrong, highest first. Then design the cheapest
-possible test for the top one, something I could run in under an hour
-today, that would genuinely change my plan if it failed.
+1. Did I actually rank by cost of being wrong, or did I slip into
+   ranking by how LIKELY each one is? Point out any I've placed low
+   because it feels unlikely, when being wrong about it would end the
+   project.
 
-Push back if the top assumption I'd naturally test is the comfortable
-one rather than the dangerous one.
+2. Push back if the one I've put at the top is the comfortable one
+   rather than the dangerous one. The comfortable one is usually
+   technical and specific. The dangerous one is usually about whether
+   anyone wants this, or about how long things actually take.
+
+Be blunt. I'd rather find out now than on day six.
+```
+
+**B · Shrink my test** *(the one everybody needs)*
+
+```
+The assumption I'm testing: [paste]
+The test I've designed: [paste]
+
+I have TWENTY MINUTES. Not an hour, twenty minutes.
+
+Cut this down until it fits. Strip out anything that isn't directly
+answering the question: no interface, no styling, no error handling,
+no setup I could fake, no data I could hardcode.
+
+Then tell me:
+  - what the twenty-minute version actually is, step by step
+  - what result would mean the assumption is FALSE
+  - what I'm giving up by shrinking it this far, and whether that
+    matters for what I'm trying to learn
+
+If you don't think this can be tested in twenty minutes at all, say so
+and tell me what the smallest honest first step is instead.
+```
+
+**C · This one feels untestable** *(for "will anyone want it")*
+
+```
+I'm trying to test this assumption and I can't work out how:
+
+[paste the assumption]
+The project: [paste]
+
+It feels untestable to me, which probably means I'm imagining a big
+formal test.
+
+Give me three cheap, unglamorous ways to get evidence on this in under
+an hour today. Things like: showing one person a mockup and watching
+what they do, posting one sentence somewhere and seeing if anyone
+replies, searching for whether the thing already exists and nobody uses
+it, or phoning someone and asking.
+
+For each, tell me what answer would count as the assumption FAILING.
+Don't suggest surveys or interviews with more than one person.
 ```
 
 ---
