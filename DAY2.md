@@ -130,13 +130,18 @@ one rather than the dangerous one.
 
 ---
 
-## Run it · 26 min
+## Exercise 3 · Build it and run it · 20 min
 
 **Build the test and run it.** Not the feature. The ugliest thing that answers the question.
+
+**Twenty minutes is deliberately not enough to build something good.** If your test doesn't fit
+inside it, the test is too big, and that on its own is worth knowing.
 
 You are not building today. **You are finding out.**
 
 Write down what happened while it's fresh.
+
+→ back to **`02-RISK.md`**
 
 ---
 
@@ -168,9 +173,12 @@ five costs you the runway.
 
 ---
 
-## Build log
+## Build log · 5 min, in class
 
-One paragraph before you close the laptop: **what you tested, what happened, what you decided.**
+One paragraph: **what you tested, what happened, what you decided.**
+
+We do this on the clock, in the room, because as homework it never happens. In two weeks it's
+the only record of what this actually took.
 
 → open **`log/day2.md`**
 
