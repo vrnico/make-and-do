@@ -5,8 +5,11 @@
 Not the best feature finished. The entire path, start to end, existing in its worst possible
 form. A way in, a thing that happens, a way out.
 
-By the time you leave: **someone can start it and reach the end, without you sitting next to
-them.**
+By the time you leave: **someone who is not you has started it and reached the end.**
+
+Three blocks, and they go in this order on purpose. **Your head, then the machine, then a
+person.** You draw the path by hand, the machine helps you fill the holes with placeholders, and
+then somebody else walks it while you say nothing.
 
 **Every prompt from today lives in [PROMPTS.md](PROMPTS.md).**
 
@@ -94,53 +97,13 @@ problem.
 
 → open **`03-PATH.md`**
 
-### The prompts
+### This block is by hand
 
-**Five minutes on your own first.** Neither of these will draw your path for you, on purpose. An
-AI that invents your path invents an ending you don't want, and you spend Thursday defending it
-to a stranger.
+**No AI in this one.** You are the only person who knows what a person is supposed to do with
+your thing, and a path you did not write is an ending you will spend Thursday defending to a
+stranger.
 
-**A · Audit my path** *(the main one)*
-
-```
-I have written the end-to-end path for my project as a numbered list of
-steps. Your job is to AUDIT that path. Do NOT rewrite it for me and do NOT
-design my project.
-
-The project, in one sentence: [paste]
-My path: [paste your numbered steps, with HAVE / GAP / LATER marked]
-
-Check it against one definition only: a walking skeleton is a tiny
-implementation that performs a small end-to-end function, start to finish,
-in its ugliest possible form.
-
-Give me:
-
-MISSING STEPS
-Any step a real person would hit that I have not written down. Name each
-one and say where in my list it belongs.
-
-IS THERE AN ENDING
-Does my path actually end, or does it just stop? If a stranger reached my
-last step, would they know they were finished?
-
-STEPS THAT ARE SECRETLY TWO STEPS
-Anything I have written as one step that is really several. This is where
-skeletons break.
-
-STEPS THAT ARE ALREADY POLISH
-Anything on my list that is not needed for the path to connect. Be blunt.
-If I have written "style the page" as a step, say so.
-
-TOO MANY
-If I have more than seven steps, tell me which to cut for today and which
-to bring back later.
-
-Do NOT add features. Do NOT suggest anything that would make this better.
-Only tell me whether the path connects, and where it doesn't.
-```
-
-**B · I can't name step one** *(interview mode)*
+**The one exception · if the page is blank** *(it interviews you, it does not answer for you)*
 
 ```
 I'm building this over the next two weeks: [paste]
@@ -230,37 +193,50 @@ whatever gets you from three to five.
 
 → back to **`03-PATH.md`**
 
-### The prompts
+### The prompts · in this order
 
-**A · Is this still polish**
+**This is the block where the machine earns its place.** It takes what you wrote by hand in
+exercise 1. None of these invent a path, and the third one is not allowed to add a step you
+did not write.
+
+**A · Audit my path** *(start here)*
 
 ```
-I am building the ugliest possible version of one step in my path today.
+I have written the end-to-end path for my project as a numbered list of
+steps. Your job is to AUDIT that path. Do NOT rewrite it for me and do NOT
+design my project.
 
-The step: [paste]
-What I plan to build for it: [paste]
-What I am building with: [language / engine / tools]
+The project, in one sentence: [paste]
+My path: [paste your numbered steps, with HAVE / GAP / LATER marked]
 
-Twenty minutes is the limit for this step. Cut it down.
+Check it against one definition only: a walking skeleton is a tiny
+implementation that performs a small end-to-end function, start to finish,
+in its ugliest possible form.
 
 Give me:
 
-WHAT TO DELETE
-Everything in my plan that is not required for this step to CONNECT to the
-step before it and the step after it. Styling, error handling, structure I
-am adding for later, data I could hardcode, anything I am making reusable.
+MISSING STEPS
+Any step a real person would hit that I have not written down. Name each
+one and say where in my list it belongs.
 
-THE UGLIEST VERSION
-What is left after all of that is deleted, in one short paragraph. Not code
-unless it is genuinely one or two lines.
+IS THERE AN ENDING
+Does my path actually end, or does it just stop? If a stranger reached my
+last step, would they know they were finished?
 
-CONNECTED OR NOT
-Say plainly whether the ugliest version still lets a person get from the
-previous step to the next one. That is the only thing this step has to do
-today.
+STEPS THAT ARE SECRETLY TWO STEPS
+Anything I have written as one step that is really several. This is where
+skeletons break.
 
-Do NOT make it better. Do NOT add anything I did not mention.
-If my plan is already the ugliest version, say so in one line and stop.
+STEPS THAT ARE ALREADY POLISH
+Anything on my list that is not needed for the path to connect. Be blunt.
+If I have written "style the page" as a step, say so.
+
+TOO MANY
+If I have more than seven steps, tell me which to cut for today and which
+to bring back later.
+
+Do NOT add features. Do NOT suggest anything that would make this better.
+Only tell me whether the path connects, and where it doesn't.
 ```
 
 **B · Sequencing or avoiding** *(the one that matters today)*
@@ -300,26 +276,92 @@ If a step genuinely cannot be faked and has to be built, say so plainly and
 tell me the smallest real version of it.
 ```
 
+**C · My steps as one file** *(if it runs in a browser)*
+
+It renders the path **you** wrote and is not allowed to add to it. **The last section is the
+point:** everything it had to guess at is a part of your path you have not thought through yet.
+
+The file it gives you goes at the top of your repo, and it is the exact file GitHub Pages serves.
+That is your link for tomorrow.
+
+```
+Here is the path I wrote for my project, in my own words:
+
+[paste your numbered steps exactly as you wrote them]
+
+Turn MY steps into one file called index.html. That is the whole job.
+
+RULES
+Use only the steps I wrote. Do NOT add steps, screens, features or copy
+I did not write. Where a step of mine is vague, put my own words on the
+screen verbatim rather than inventing something better.
+No CSS beyond what it takes to be readable. No frameworks, no libraries,
+no build step, no images, no fonts.
+ONE file. It has to work by double-clicking it, with no internet.
+Every screen needs a way to the next one, and the last screen needs a way
+back to the start.
+
+GIVE ME
+
+THE FILE
+One complete index.html I can copy straight out. Nothing to install.
+
+WHAT'S FAKE IN IT
+Every hardcoded value, dead button and placeholder you put in, as a list
+I can paste straight into my fake list.
+
+WHAT I DIDN'T SPECIFY
+Everything you had to guess at because my path did not say. Be specific.
+These are the steps I have not actually thought through yet.
+
+Do NOT make it look good. Do NOT add a feature because it would be easy.
+If my path has three steps, the file has three screens and no more.
+```
+
 ---
 
-## Exercise 3 · Walk it · 15 min
+## Exercise 3 · Somebody else walks it · 15 min
 
-**Start at step one. Go to the end.**
+**You cannot walk your own path honestly.** You know where everything is, you know which button
+is dead, and your hand goes to the right place without you noticing. That is the whole reason
+this is the third exercise and not the first.
 
-- Touch nothing.
-- Explain nothing.
-- Fix nothing on the way.
+There are however many of us there are sitting in this room. **Use the room.** That was Tuesday's
+lesson and it cost a whole exercise to learn.
 
-**Where it stops is the gap.** Write down *where* it stopped. Then fix the gap, not the step.
+**First five minutes · post yours.**
 
-Then **walk it again from the start.** Twice, because the first time you're driving from memory
-and you won't notice the things you already know.
+In the Matrix room, post whatever somebody could walk:
 
-→ back to **`03-PATH.md`**
+- a link, if you did the Pages step
+- a photo of your index cards
+- a link to your slides
+- or just your numbered path, typed out
 
-### The prompt
+Then it is out of your hands.
 
-**A · Walk it with me** *(works identically for a paper skeleton, just read the cards)*
+**Next ten · walk somebody else's.**
+
+Pick one that isn't yours. Start at their step one and go to the end. Then post in their thread:
+
+- **where you stopped**, and what you were looking at when you stopped
+- **anything you had to guess**
+- **what you thought it was**
+
+> **Say nothing about your own while they are in it.** You are in a chat window, so this is the
+> easiest day you will ever get at the discipline that makes Thursday work. **If you talked, you
+> didn't test.**
+
+**Then read yours.** Fix the first thing somebody actually stopped on. Not the next feature. The
+place a real person stopped.
+
+> **This does not use up Thursday.** These people know what the class is and they have heard you
+> talk about your project. **A cohort-mate is a poor substitute for a stranger and an excellent
+> substitute for you.** Tomorrow is still strangers.
+
+### If nobody has walked yours yet
+
+*Only if you are stuck without a partner, or your thing genuinely cannot be posted.*
 
 ```
 I am going to walk you through my project one step at a time, as if you
@@ -353,13 +395,44 @@ is tomorrow's list.
 
 ## Today's checkpoint
 
-**Someone can start it and reach the end.**
+**Someone who is not you started it and reached the end.**
 
-Not that it's good. Not that it's finished. That somebody can start it and get to the end
-**without you sitting next to them.**
+Not that it's good. Not that it's finished. Not that *you* can get to the end, because you always
+can. **That somebody else did, without you sitting next to them.**
 
 If that's true today, tomorrow works. If it isn't, tomorrow is you describing something to three
 strangers, which is a much worse Thursday.
+
+---
+
+## If it runs in a browser, give it a link
+
+Tomorrow you hand it to three people who are not you. **A link is how they get to it**, and it
+takes about two minutes to have one.
+
+Your `index.html` goes at the **top level** of your repo. Then:
+
+**Settings** → **Pages** → Source **Deploy from a branch** → Branch **`main`**, folder
+**`/ (root)`** → **Save**.
+
+A minute later it is live at `https://<your-username>.github.io/<your-repo>/`.
+
+**No install, no terminal.** On a Chromebook or a locked-down laptop: press **`.`** on your repo
+to open the browser editor, make `index.html`, commit it from the **Source Control** panel, then
+do the Pages step above. Everything happens in the browser.
+
+**Four things that bite people:**
+
+- **The repo has to be public.** Pages on a private repo is a paid feature, and this is the one
+  that catches everybody.
+- **The file has to be called `index.html`** and it has to be at the root, not in a folder.
+- **The first build takes a minute or two.** A 404 in the first thirty seconds is normal.
+  Refresh it.
+- **It is a live public web page.** Nothing in there you would not put on a billboard.
+
+> **If your thing does not run in a browser, skip all of this.** Tomorrow your three people sit
+> next to you, or you send them a build. That is a completely fine Thursday and it is not a
+> lesser one.
 
 ---
 

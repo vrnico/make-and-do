@@ -9,9 +9,9 @@ believe, and you cannot test a bet you never actually made.
 - [Day 2 · Ten assumptions](#day-2--ten-assumptions)
 - [Day 2 · Sort, circle, design the test](#day-2--sort-circle-design-the-test)
 - [Day 2 · Run the test in 15 minutes](#day-2--run-the-test-in-15-minutes)
-- [Day 3 · Draw the path](#day-3--draw-the-path)
+- [Day 3 · Draw the path, by hand](#day-3--draw-the-path-by-hand)
 - [Day 3 · Build the empty steps](#day-3--build-the-empty-steps)
-- [Day 3 · Walk it](#day-3--walk-it)
+- [Day 3 · Somebody else walks it](#day-3--somebody-else-walks-it)
 
 ---
 
@@ -178,15 +178,47 @@ and tell me what the smallest first step is instead.
 
 ---
 
-## Day 3 · Draw the path
+## Day 3 · Draw the path, by hand
 
-**Write the steps yourself first.** Neither of these will draw your path for you, on purpose. An
-AI that invents your path invents an ending you don't want, and you spend Thursday defending it
-to a stranger.
+**There is no prompt for this one.** You are the only person who knows what somebody is supposed
+to do with your thing, and a path you did not write is an ending you will spend Thursday
+defending to a stranger.
+
+### The one exception · if the page is blank
+
+*It interviews you. It does not answer for you.*
+
+```
+I'm building this over the next two weeks: [paste]
+
+I can't work out what the first step of it is. Interview me until I can
+say the path out loud myself.
+
+Ask ONE question at a time and wait for my answer before the next one.
+Work in this order:
+  1. what a person is doing right before they encounter this
+  2. what the very first thing they see or type is
+  3. what one thing happens
+  4. how they know it worked
+  5. how it ends
+
+Do NOT summarise, do NOT reassure, do NOT suggest features, and do NOT
+write my path for me.
+
+At the end, give me back my path as a numbered list, in my own words where
+you can, and tell me which steps I never actually answered.
+```
+
+---
+
+## Day 3 · Build the empty steps
+
+**This is the block where the machine earns its place**, and it works on what you wrote by hand
+in exercise 1. Run them in this order.
 
 ### A · Audit my path
 
-*The main one. Your numbered steps go in, an audit comes back.*
+*Start here. Your steps go in, an audit comes back. It is not allowed to rewrite them.*
 
 ```
 I have written the end-to-end path for my project as a numbered list of
@@ -224,68 +256,6 @@ to bring back later.
 
 Do NOT add features. Do NOT suggest anything that would make this better.
 Only tell me whether the path connects, and where it doesn't.
-```
-
-### B · I can't name step one
-
-*Interview mode. It asks, you answer, your path comes back in your own words.*
-
-```
-I'm building this over the next two weeks: [paste]
-
-I can't work out what the first step of it is. Interview me until I can
-say the path out loud myself.
-
-Ask ONE question at a time and wait for my answer before the next one.
-Work in this order:
-  1. what a person is doing right before they encounter this
-  2. what the very first thing they see or type is
-  3. what one thing happens
-  4. how they know it worked
-  5. how it ends
-
-Do NOT summarise, do NOT reassure, do NOT suggest features, and do NOT
-write my path for me.
-
-At the end, give me back my path as a numbered list, in my own words where
-you can, and tell me which steps I never actually answered.
-```
-
----
-
-## Day 3 · Build the empty steps
-
-### A · Is this still polish
-
-*Point it at one step you are about to build, before you build it.*
-
-```
-I am building the ugliest possible version of one step in my path today.
-
-The step: [paste]
-What I plan to build for it: [paste]
-What I am building with: [language / engine / tools]
-
-Twenty minutes is the limit for this step. Cut it down.
-
-Give me:
-
-WHAT TO DELETE
-Everything in my plan that is not required for this step to CONNECT to the
-step before it and the step after it. Styling, error handling, structure I
-am adding for later, data I could hardcode, anything I am making reusable.
-
-THE UGLIEST VERSION
-What is left after all of that is deleted, in one short paragraph. Not code
-unless it is genuinely one or two lines.
-
-CONNECTED OR NOT
-Say plainly whether the ugliest version still lets a person get from the
-previous step to the next one. That is the only thing this step has to do
-today.
-
-Do NOT make it better. Do NOT add anything I did not mention.
-If my plan is already the ugliest version, say so in one line and stop.
 ```
 
 ### B · Sequencing or avoiding
@@ -328,13 +298,61 @@ If a step genuinely cannot be faked and has to be built, say so plainly and
 tell me the smallest real version of it.
 ```
 
+### C · My steps as one file
+
+*Only if your thing runs in a browser.*
+
+It renders the path **you** wrote and is not allowed to add to it. **The last section is the
+point:** everything it had to guess at is a part of your path you have not thought through yet.
+
+The file it gives you goes at the top level of your repo, and it is the exact file GitHub Pages
+serves. That is your link for tomorrow.
+
+```
+Here is the path I wrote for my project, in my own words:
+
+[paste your numbered steps exactly as you wrote them]
+
+Turn MY steps into one file called index.html. That is the whole job.
+
+RULES
+Use only the steps I wrote. Do NOT add steps, screens, features or copy
+I did not write. Where a step of mine is vague, put my own words on the
+screen verbatim rather than inventing something better.
+No CSS beyond what it takes to be readable. No frameworks, no libraries,
+no build step, no images, no fonts.
+ONE file. It has to work by double-clicking it, with no internet.
+Every screen needs a way to the next one, and the last screen needs a way
+back to the start.
+
+GIVE ME
+
+THE FILE
+One complete index.html I can copy straight out. Nothing to install.
+
+WHAT'S FAKE IN IT
+Every hardcoded value, dead button and placeholder you put in, as a list
+I can paste straight into my fake list.
+
+WHAT I DIDN'T SPECIFY
+Everything you had to guess at because my path did not say. Be specific.
+These are the steps I have not actually thought through yet.
+
+Do NOT make it look good. Do NOT add a feature because it would be easy.
+If my path has three steps, the file has three screens and no more.
+```
+
 ---
 
-## Day 3 · Walk it
+## Day 3 · Somebody else walks it
 
-### A · Walk it with me
+**This block is people, not prompts.** You post yours in the room, you open somebody else's, you
+walk it, and you say nothing. You cannot walk your own path honestly because you already know
+where everything is.
 
-*Works identically for a paper skeleton. Just read the cards out instead of clicking.*
+### Only if nobody has walked yours yet
+
+*A fallback for no partner, or for a thing that genuinely cannot be posted.*
 
 ```
 I am going to walk you through my project one step at a time, as if you
