@@ -9,6 +9,9 @@ believe, and you cannot test a bet you never actually made.
 - [Day 2 · Ten assumptions](#day-2--ten-assumptions)
 - [Day 2 · Sort, circle, design the test](#day-2--sort-circle-design-the-test)
 - [Day 2 · Run the test in 15 minutes](#day-2--run-the-test-in-15-minutes)
+- [Day 3 · Draw the path](#day-3--draw-the-path)
+- [Day 3 · Build the empty steps](#day-3--build-the-empty-steps)
+- [Day 3 · Walk it](#day-3--walk-it)
 
 ---
 
@@ -153,8 +156,8 @@ smallest honest first step on number 1.
 ### If it says your test needs other people
 
 **Read this before you accept that.** In class, the test that came back was *"get a stranger to
-play it"*, which sounds impossible in fifteen minutes. There were fifteen people in the room at
-the time.
+play it"*, which sounds impossible in fifteen minutes. **patrick firefly** pointed out that there
+were fifteen potential playtesters sitting in the call at the time.
 
 **We make risk-avoiding assumptions too.** "That test is too hard" is itself a bet, and it's
 usually the one protecting the assumption you least want to look at.
@@ -171,4 +174,192 @@ the internet.
 
 If the honest answer is that it genuinely can't be shrunk, say so plainly
 and tell me what the smallest first step is instead.
+```
+
+---
+
+## Day 3 · Draw the path
+
+**Write the steps yourself first.** Neither of these will draw your path for you, on purpose. An
+AI that invents your path invents an ending you don't want, and you spend Thursday defending it
+to a stranger.
+
+### A · Audit my path
+
+*The main one. Your numbered steps go in, an audit comes back.*
+
+```
+I have written the end-to-end path for my project as a numbered list of
+steps. Your job is to AUDIT that path. Do NOT rewrite it for me and do NOT
+design my project.
+
+The project, in one sentence: [paste]
+My path: [paste your numbered steps, with HAVE / GAP / LATER marked]
+
+Check it against one definition only: a walking skeleton is a tiny
+implementation that performs a small end-to-end function, start to finish,
+in its ugliest possible form.
+
+Give me:
+
+MISSING STEPS
+Any step a real person would hit that I have not written down. Name each
+one and say where in my list it belongs.
+
+IS THERE AN ENDING
+Does my path actually end, or does it just stop? If a stranger reached my
+last step, would they know they were finished?
+
+STEPS THAT ARE SECRETLY TWO STEPS
+Anything I have written as one step that is really several. This is where
+skeletons break.
+
+STEPS THAT ARE ALREADY POLISH
+Anything on my list that is not needed for the path to connect. Be blunt.
+If I have written "style the page" as a step, say so.
+
+TOO MANY
+If I have more than seven steps, tell me which to cut for today and which
+to bring back later.
+
+Do NOT add features. Do NOT suggest anything that would make this better.
+Only tell me whether the path connects, and where it doesn't.
+```
+
+### B · I can't name step one
+
+*Interview mode. It asks, you answer, your path comes back in your own words.*
+
+```
+I'm building this over the next two weeks: [paste]
+
+I can't work out what the first step of it is. Interview me until I can
+say the path out loud myself.
+
+Ask ONE question at a time and wait for my answer before the next one.
+Work in this order:
+  1. what a person is doing right before they encounter this
+  2. what the very first thing they see or type is
+  3. what one thing happens
+  4. how they know it worked
+  5. how it ends
+
+Do NOT summarise, do NOT reassure, do NOT suggest features, and do NOT
+write my path for me.
+
+At the end, give me back my path as a numbered list, in my own words where
+you can, and tell me which steps I never actually answered.
+```
+
+---
+
+## Day 3 · Build the empty steps
+
+### A · Is this still polish
+
+*Point it at one step you are about to build, before you build it.*
+
+```
+I am building the ugliest possible version of one step in my path today.
+
+The step: [paste]
+What I plan to build for it: [paste]
+What I am building with: [language / engine / tools]
+
+Twenty minutes is the limit for this step. Cut it down.
+
+Give me:
+
+WHAT TO DELETE
+Everything in my plan that is not required for this step to CONNECT to the
+step before it and the step after it. Styling, error handling, structure I
+am adding for later, data I could hardcode, anything I am making reusable.
+
+THE UGLIEST VERSION
+What is left after all of that is deleted, in one short paragraph. Not code
+unless it is genuinely one or two lines.
+
+CONNECTED OR NOT
+Say plainly whether the ugliest version still lets a person get from the
+previous step to the next one. That is the only thing this step has to do
+today.
+
+Do NOT make it better. Do NOT add anything I did not mention.
+If my plan is already the ugliest version, say so in one line and stop.
+```
+
+### B · Sequencing or avoiding
+
+**The one that matters today.** It is Day 2's finding pointed at Day 3's list. "I'll do that
+later" is going to sound completely reasonable to whoever says it, which is exactly the problem.
+
+```
+Here is my end-to-end path, and here are the steps I decided to leave for
+later today.
+
+My path: [paste the numbered steps]
+The steps I marked LATER: [paste]
+Why I marked them later, in my own words: [paste]
+
+Yesterday I learned that "that's too hard" can itself be an untested
+assumption. Pressure-test my LATER list against that.
+
+For each step I marked LATER, give me:
+
+SEQUENCING OR AVOIDING
+Is this genuinely work that has to come after other work, or am I routing
+around the part I least want to look at? Say which, and why. Be blunt and
+do not soften it.
+
+WHAT THE PATH LOSES
+What can a person NOT do while that step is a hole? If the answer is "reach
+the end", say that first.
+
+THE CHEAPEST FAKE
+One line. The dumbest thing that could sit in that slot today so the path
+connects. A hardcoded value, a button that just goes to the next screen,
+one instead of many, a still image instead of the real thing.
+
+Do NOT build the real version of any of these steps. Do NOT tell me the
+fake is good enough permanently, it is a placeholder and I am writing it
+down as one.
+
+If a step genuinely cannot be faked and has to be built, say so plainly and
+tell me the smallest real version of it.
+```
+
+---
+
+## Day 3 · Walk it
+
+### A · Walk it with me
+
+*Works identically for a paper skeleton. Just read the cards out instead of clicking.*
+
+```
+I am going to walk you through my project one step at a time, as if you
+were a stranger using it. Your job is to catch the moment the path stops.
+
+Rules for you:
+  - ask ONE question after each step, then wait for me
+  - the two questions are always: what does the person SEE, and what do
+    they DO next
+  - stop me the moment I describe something that is not actually built
+  - say "that step does not exist" out loud when it happens
+  - do NOT suggest features, do NOT offer to write anything for me, and
+    do NOT encourage me
+
+Start by asking what the very first thing a person sees is.
+
+At the end, give me:
+
+WHERE IT STOPPED
+The first step where the path broke, and what broke about it.
+
+WHAT I DESCRIBED THAT ISN'T BUILT
+Everything I narrated as though it existed when it doesn't.
+
+WHAT A STRANGER WOULD HAVE HAD TO ALREADY KNOW
+Anything I explained to you that the thing itself does not explain. This
+is tomorrow's list.
 ```
