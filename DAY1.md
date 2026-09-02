@@ -1,6 +1,6 @@
 # Day 1 · Monday · Scope Down
 
-**The first scope is always too big.** Today it gets smaller — and the framework tells you
+**The first scope is always too big.** Today it gets smaller, and the framework tells you
 *which parts* to cut rather than just cutting proportionally.
 
 By the time you leave: **one project named, a demo-ready definition written, one genesis
@@ -8,7 +8,7 @@ component identified, and the riskiest part named and started.**
 
 ---
 
-## First — take a copy
+## First · take a copy
 
 One line. It gives you a folder with everything today needs in it.
 
@@ -17,14 +17,14 @@ git clone https://github.com/vrnico/make-and-do-template.git my-project
 cd my-project
 ```
 
-**No git yet?** [**Download the ZIP**](https://github.com/vrnico/make-and-do-template/archive/refs/heads/main.zip) — that link downloads
+**No git yet?** [**Download the ZIP**](https://github.com/vrnico/make-and-do-template/archive/refs/heads/main.zip) for one click. That link downloads
 straight away, no account, nothing to click through. Unzip it and **rename the folder** from
 `make-and-do-template-main` to whatever your project is called.
 
 Identical files either way. We'll get git on your machine in the Shipping Software hour and it
 costs you nothing today.
 
-Open the folder in whatever you edit text in. **That's the whole setup — don't do any more of
+Open the folder in whatever you edit text in. **That's the whole setup. Don't do any more of
 it right now.**
 
 ---
@@ -38,7 +38,7 @@ Write it as one paragraph.
 3. **What can they DO?**
 4. **What can they NOT do?**
 
-**Part 4 is the one that matters.** It's the only part you can't quietly move on day six — which
+**Part 4 is the one that matters.** It's the only part you can't quietly move on day six, which
 is exactly why you're writing it on day one, before there's anything to defend it against.
 
 > **Holding two projects?** You won't be able to write this. That's not you failing the exercise,
@@ -85,7 +85,7 @@ What I think makes it distinctive: [paste]
 
 For each component: which stage, and if it's Product or Commodity, name two
 specific existing things I could use instead of building it. Then tell me
-which single Genesis component is the actual heart of this project — the
+which single Genesis component is the actual heart of this project, the
 one where, if I only shipped that, it would still be recognisably the idea.
 Be blunt if what I called distinctive is actually Custom.
 ```
@@ -97,14 +97,14 @@ Be blunt if what I called distinctive is actually Custom.
 **Start the genesis component.** Not the folder structure, not the build pipeline, not making
 the repo yours. The scary bit.
 
-It's going to be bad. You're not making it work — you're finding out what it's like.
+It's going to be bad. You're not making it work, you're finding out what it's like.
 
 ---
 
 ## Exercise 3 · The riskiest part · 15 min
 
 **Whatever is most likely to not work is the thing you do first, not the thing you save.** Most
-prototypes that fail, fail because the hard part was left for last — and by the time you reach
+prototypes that fail, fail because the hard part was left for last, and by the time you reach
 it there's no time to do anything but panic.
 
 So: **name it in writing.** The one piece where, if it turns out to be impossible or much harder
@@ -116,7 +116,7 @@ Then write **one checkpoint for tomorrow**. A checkpoint is a thing that either 
 - Not *"work on the renderer"* → **"the renderer draws one frame."**
 - Not *"make progress on audio"* → **"one sound plays when you click."**
 
-A percentage-complete estimate is a wish — it sits at 80% until you run out of days. Something
+A percentage-complete estimate is a wish. It sits at 80% until you run out of days. Something
 binary is the only kind that tells you you're behind while there's still time to do something
 about it.
 
@@ -131,10 +131,10 @@ about it.
 **The riskiest part is identified in writing, and you have started it.** Not planned it. Started
 it.
 
-> **Watch for this in yourself.** Somebody will have spent the whole hour on setup — repo,
+> **Watch for this in yourself.** Somebody will have spent the whole hour on setup: repo,
 > tooling, project structure, a build pipeline. That feels like progress and is the most reliable
 > way to lose a fortnight. **The genesis component gets touched on day one or the sprint is
-> already in trouble** — and the person doing it won't notice, because setup is genuinely
+> already in trouble**, and the person doing it won't notice, because setup is genuinely
 > satisfying and genuinely necessary and entirely beside the point right now.
 
 ---
@@ -162,7 +162,7 @@ git init
 git add -A && git commit -m "day 1"
 ```
 
-If you took the **ZIP**, there's no git in there at all — skip the first line, start at
+If you took the **ZIP**, there's no git in there at all. Skip the first line, start at
 `git init`. You've actually got the simpler path.
 
 Then an empty repo on GitHub and `git remote add origin …`. The
